@@ -2,10 +2,10 @@
   "name": "decagon-project",
   "version": "1.0.0",
   "description": "This is an online payroll management system",
-  "start": "json-server --watch ./db.json",
-  "start-auth": "nodemon --exec babel-node ./app.js",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
+    "start-db": "json-server --watch ./adminDb.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
